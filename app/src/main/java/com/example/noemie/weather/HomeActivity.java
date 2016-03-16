@@ -4,7 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuItemImpl;
-import android.view.MenuItem;
+import android.view.Menu;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +40,14 @@ public class HomeActivity extends AppCompatActivity {
            // getSupportActionBar().SetDisplayHomeAsUpEnabled(true);
 
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //ajoute les entrées de menu_test à l'ActionBar
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
     }
 
 
