@@ -1,0 +1,50 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lightgrey">
+
+    <TextView
+        android:id="@+id/day_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:textColor="#000"
+        android:textSize ="30sp"/>
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_below="@id/day_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partly cloudy in the morning"
+        android:textColor="@color/darkgrey"
+        android:textSize ="20sp" />
+
+    <ImageView
+        android:id="@+id/view3"
+        android:src="@drawable/weatherwind"
+        android:layout_below="@id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitEnd"
+        />
+    <TextView
+        android:id="@+id/view4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5°/1°"
+        android:textColor="@color/darkgrey"
+        android:textSize ="50sp" />
+    <TextView
+        android:id="@+id/view5"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chance of rain/snow: 0%"
+        android:textColor="@color/darkgrey"
+        android:textSize ="20sp" />
+</RelativeLayout>
